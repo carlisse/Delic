@@ -1,0 +1,135 @@
+@import url('https://fonts.googleapis.com/css2? family=Marck+Script&family=Montserrat:wght@400;600&family=Playball&family==Tangerine:wght@700&display=swap" rel="stylesheet">');
+
+:root{
+    --padding-container: 100px 0;
+    --color-title: #161616;
+    --color-plan: #050505fb;
+    --color-price: #142d1f;
+    --bg-cta: #ffffffcf;
+    --color-cta:#0b532d;
+    --color-items: #282928;
+}
+
+body{
+    font-family: 'Marck Script', cursiva;
+    background-image: url('../img/fondo-madera-blanco-abstracto_7182-2193.webp');
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 600px;
+    max-height: 800px;
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: white;
+}
+
+.container{
+    display: grid;
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(180deg, #0000008c 0%, #0000008c 100%), url('../img/R.jpg');
+    background: cover;
+    background-repeat: round;
+    z-index: -1;
+}
+
+.nav{
+    --padding-container: 0;
+    height: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.nav__title h2{
+    font-family: 'Marck Script 400', cursiva;
+    height: 3em;
+    font-weight: 900;
+}
+
+.nav__link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+    cursor: pointer;
+}
+
+.nav__items{
+    list-style: none;
+}
+
+.nav__links{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+.nav__img{
+    display: block;
+    width: 30px;
+
+}
+
+.nav__close{
+    display: var(--show, none);
+}
+/*hero container*/
+
+.hero__container{
+    max-width: 800px;
+    --padding-container: 0;
+    display: grid;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.hero__title{
+    font-size: 2.5rem;
+}
+
+.hero__paragraph{
+    margin-bottom: 20px;
+    font-size: 1.5em;
+}
+
+.cta{
+    display: grid;
+    text-transform: capitalize;
+    background-color: #33a669;
+    justify-self: center;
+    color: #fff;
+    text-decoration: none;
+    padding: 13px 30px;
+    border-radius: 32px;
+    transition: all .3s ease-in-out;
+}
+
+.cta:hover{
+    color: #33a669;
+    background-color: #fff;
+}
