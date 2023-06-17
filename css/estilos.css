@@ -310,3 +310,38 @@ body{
     cursor: pointer;
 }
 
+/*services*/
+
+.services{
+    text-align: center;
+}
+
+.services__container{
+    display: grid;
+    gap: 1.5em;
+    padding-top: 50px;
+    padding-bottom: 80px;
+}
+.services__padding{
+    padding: 0;
+    border-radius: 6px;
+    background-color: #bb9e92d5;
+}
+
+.services__padding--add{
+    padding-bottom: 30px;
+}
+
+.services__service{
+    padding: 0 30px 0;
+}
+
+.services__title{
+    text-align: left;
+    display: flex;
+    font-size: 20px;
+    padding: 25px 0 25px;
+    cursor: pointer;
+    color: var(--color-title);
+    justify-content: space-between;
+}
