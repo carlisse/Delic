@@ -384,6 +384,12 @@ body{
 
 }
 
+/* Footer */
+
+.footer{
+    background-color: #646566;
+}
+
 .footer__title{
     font-weight: 300;
     font-size: 2rem;
